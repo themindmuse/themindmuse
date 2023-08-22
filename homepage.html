@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mind Muse</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap');
+        html{
+            background-color: #0c0d21;
+        }
+        .header{
+            color:#ffd75c;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            padding-top: 80px;
+            font-size: 50px;
+            font-weight: 700;
+        }
+        .subheader{
+            color:#c4d9ef;
+            font-size:25px;
+            font-weight: 10;
+            font-family: 'Bricolage Grotesque', sans-serif;
+        }
+        .buttonstyling{
+            background-color:#f94736;
+            padding:5px;
+            font-size: 18px;
+            border-radius: 100px;
+            margin: 20px;
+            box-shadow: -1px 1px #c4d9ef;
+            font-family: 'Bricolage Grotesque', sans-serif;
+        }
+        .cardgroup{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .card{
+            background-color: #c4d9ef;
+            width: calc(50% - 20px);
+            margin: 20px;
+            border-radius: 30px;
+            padding: 20px;
+            position:relative;
+        }
+        .cardheaders{
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 30px;
+            color:#0c0d21;
+            font-weight: 800;
+            margin-top: 0;
+        }
+        .cardsubheaders{
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-size: 18px;
+            color:#0c0d21;
+            font-weight: 300;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function openArticles(){
+            window.open("articles.html", "_self")
+        }
+        function openAbout(){
+            window.open("aboutus.html", "_self")
+        }
+        
+    </script>
+</head>
+<body>
+    <center><h1 class="header">The Mind Muse</h1></center>
+    <center><h3 class="subheader">Informative STEM articles helping you stay up-to-date with today's events and innovations.</h3></center>
+    <center>
+        <div class="buttongroup">
+            <button class="buttonstyling" onclick="openArticles()">View Articles</button>
+            <button class="buttonstyling" onclick = "openAbout()">About Us</button>
+            <button class="buttonstyling">Contact Us</button>
+        </div>
+    </center>
+    
+    <div class="cardgroup">
+        <div class="card">
+            <h1 class="cardheaders">Simplified.</h1>
+            <p class="cardsubheaders">Content simplified to a level that all ages can understand. The purpose of these articles is to help you understand basic concepts of STEM, and inspire curiosity about the wonders of the world around us.</p>
+        </div>
+        <div class="card">
+            <h1 class="cardheaders">Short.</h1>
+            <p class="cardsubheaders">Short articles that explain concepts clearly for your convenience. Let's be honest, a 10-page article is not very inviting to read. On the other hand, our 200-300 word articles are brief, yet highly informative.</p>
+        </div>
+    </div>
+</body>
+</html>
